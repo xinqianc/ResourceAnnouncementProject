@@ -1,8 +1,3 @@
-
-(base) [xinqianc@colossus week_5]$ mkdir de_novo_assembly_week_5
-cd de_novo_assembly_week_5
-
-
 (de_novo) [xinqianc@colossus ~]$ cd /scratch_30_day_tmp/xinqianc
 (de_novo) [xinqianc@colossus xinqianc]$ mkdir resource_announcement_project
 (de_novo) [xinqianc@colossus xinqianc]$ cd resource_announcement_project/
