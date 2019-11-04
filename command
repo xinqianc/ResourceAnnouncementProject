@@ -84,4 +84,15 @@ L75                         10
 contigs.fasta
 (annotation) [xinqianc@colossus prokka_annotation]$awk '/^>/{print ">P1_" ++i; next}{print}' < contigs.fasta > contigs_names.fasta
 (annotation) [xinqianc@colossus prokka_annotation]$ prokka --outdir P1 --prefix P1 contigs_names.fasta
+(annotation) [xinqianc@colossus prokka_annotation]$ cd P1
+(annotation) [xinqianc@colossus P1]$ ls
+P1.err  P1.ffn  P1.fsa  P1.gff  P1.sqn  P1.tsv
+P1.faa  P1.fna  P1.gbk  P1.log  P1.tbl  P1.txt
+
+4.1 Functional annotation:
+(annotation) [xinqianc@colossus P1]$grep "COG" P1.tsv | cut -f6 | sort | uniq -c |sort -n
+(annotation) [xinqianc@colossus P1]$grep "eC_number=" P1.gff | cut -f9| cut -f1,2 -d ';'| sed 's/ID=//g'| sed 's/;eC_number=/\t/g' > PROKKA..ec
+(annotation) [xinqianc@colossus P1]$ wc -l PROKKA..ec
+1424 
+
 
