@@ -21,6 +21,7 @@ gdown.pl https://drive.google.com/file/d/1HJFsbJ7urNxN4TNyi44j5cJFpLF7MT-k/edit 
 (de_novo) [xinqianc@colossus resource_announcement_project]$ 
 gdown.pl https://drive.google.com/file/d/1ZitxgqfMtFBGPniI9ll4AXxqgusd_hbA/edit P.Angola_27_R2.cutadapt.fasta
 gdown.pl https://drive.google.com/file/d/1n2bV5DQWqcAkvJ-WafALpgV1eV5WheEY/edit P.Angola_27_R1.cutadapt.fasta
+
 (de_novo) [xinqianc@colossus resource_announcement_project]$ cp P.Angola_27_R2.cutadapt.fasta de_novo
 (de_novo) [xinqianc@colossus resource_announcement_project]$ cd de_novo/
 (de_novo) [xinqianc@colossus de_novo]$ ls
