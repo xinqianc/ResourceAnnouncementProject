@@ -72,3 +72,16 @@ N75                         172889
 L50                         5
 L75                         10
 # N's per 100 kbp           0.00
+
+4.Annotation
+(de_novo) [xinqianc@colossus ~]$ conda activate annotation
+(annotation) [xinqianc@colossus ~]$ cd scratch/
+(annotation) [xinqianc@colossus scratch]$ cd resource_announcement_project/
+(annotation) [xinqianc@colossus resource_announcement_project]$mkdir prokka_annotation
+(annotation) [xinqianc@colossus resource_announcement_project]$cp de_novo/P1_spades_output/contigs.fasta prokka_annotation
+(annotation) [xinqianc@colossus resource_announcement_project]$ cd prokka_annotation/
+(annotation) [xinqianc@colossus prokka_annotation]$ ls
+contigs.fasta
+(annotation) [xinqianc@colossus prokka_annotation]$awk '/^>/{print ">P1_" ++i; next}{print}' < contigs.fasta > contigs_names.fasta
+(annotation) [xinqianc@colossus prokka_annotation]$ prokka --outdir P1 --prefix P1 contigs_names.fasta
+
