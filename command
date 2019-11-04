@@ -18,5 +18,12 @@ gdown.pl https://drive.google.com/file/d/1HJFsbJ7urNxN4TNyi44j5cJFpLF7MT-k/edit 
 (de_novo) [xinqianc@colossus resource_announcement_project]$ mkdir de_novo
 (de_novo) [xinqianc@colossus resource_announcement_project]$ cd de_novo/
 (de_novo) [xinqianc@colossus resource_announcement_project]$ cp P.Angola_27_R1.cutadapt.fastq de_novo
-
-gdown.pl https://drive.google.com/file/d/1uoXQZeaismPEFe_rJjrkRdntDI0vBUNL/edit C.hydrogenoformans_Z2901.fasta
+(de_novo) [xinqianc@colossus resource_announcement_project]$ gdown.pl https://drive.google.com/file/d/1ZitxgqfMtFBGPniI9ll4AXxqgusd_hbA/edit P.Angola_27_R2.cutadapt.fasta
+(de_novo) [xinqianc@colossus resource_announcement_project]$ cp P.Angola_27_R2.cutadapt.fasta de_novo
+(de_novo) [xinqianc@colossus resource_announcement_project]$ cd de_novo/
+(de_novo) [xinqianc@colossus de_novo]$ ls
+P.Angola_27_R1.cutadapt.fastq  P.Angola_27_R2.cutadapt.fasta
+(de_novo) [xinqianc@colossus de_novo]$ mv P.Angola_27_R2.cutadapt.fasta P.Angola_27_R2.cutadapt.fastq
+(de_novo) [xinqianc@colossus de_novo]$
+spades.py -k 21,51,71,91,111,127 --careful --pe1-1 P.Angola_27_R1.cutadapt.fastq --pe1-2 P.Angola_27_R2.cutadapt.fastq -o P1_spades_output
+spades.py -k 21,51,71,91,111,127 --careful --pe1-1 T1_R1.cutadapt.fastq --pe1-2 T1_R2.cutadapt.fastq -o T1_spades_output
