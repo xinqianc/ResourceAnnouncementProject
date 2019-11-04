@@ -31,4 +31,3 @@ mv P.Angola_27_R2.cutadapt.fasta P.Angola_27_R2.cutadapt.fastq
 mv P.Angola_27_R1.cutadapt.fasta P.Angola_27_R1.cutadapt.fastq
 (de_novo) [xinqianc@colossus de_novo]$
 spades.py -k 21,51,71,91,111,127 --careful --pe1-1 P.Angola_27_R1.cutadapt.fastq --pe1-2 P.Angola_27_R2.cutadapt.fastq -o P1_spades_output
-spades.py -k 21,51,71,91,111,127 --careful --pe1-1 T1_R1.cutadapt.fastq --pe1-2 T1_R2.cutadapt.fastq -o T1_spades_output
